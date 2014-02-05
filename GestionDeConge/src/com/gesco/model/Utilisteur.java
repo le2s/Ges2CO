@@ -1,6 +1,6 @@
 package com.gesco.model;
 
-public abstract class Utilisteur {
+public abstract class Utilisteur extends Employe{
 	
 	private String ID;
 	private String nom;

@@ -2,12 +2,12 @@ package com.gesco.model;
 
 import java.util.ArrayList;
 
-public class Employe extends Utilisteur {
+public class Employe  {
 	
 	private double solde;
 	private ArrayList<Conge> listeDeConge;
 	private Formulaire formulaire;
-	private Justification justification;
+	private ArrayList<CongeJustifier> listeDeCongeJustifier;
 	
 	public Employe(){
 		
@@ -43,9 +43,15 @@ public class Employe extends Utilisteur {
 		return formulaire;
 	}
 
-	public Justification getJustification() {
-		return justification;
+	public ArrayList<CongeJustifier> getListeDeCongeJustifier() {
+		return listeDeCongeJustifier;
 	}
+
+	public void setListeDeCongeJustifier(
+			ArrayList<CongeJustifier> listeDeCongeJustifier) {
+		this.listeDeCongeJustifier = listeDeCongeJustifier;
+	}
+	
 	
 	
 
